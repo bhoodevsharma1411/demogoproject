@@ -1,4 +1,4 @@
-package auditlogger
+package mycode
 
 import (
 	"fmt"
