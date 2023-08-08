@@ -16,7 +16,7 @@ func GetConfig() {
 	fmt.Printf("new logger type:- %T", new_logger)
 }
 
-func create_config() logger.Config {
+func Create_config() logger.Config {
 	fmt.Println("Hello audit Logger")
 	File, _ := os.OpenFile("./audit.log", os.O_RDWR|os.O_CREATE|os.O_APPEND, 0666)
 	audit_logger := logger.Config{Output: File, Format: "${status} - ${time} - ${method} - ${latency} - ${url} \n"}
